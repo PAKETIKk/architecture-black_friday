@@ -17,7 +17,7 @@ bash ./scripts/mongo-init.sh
 Инициализация роутера, заполнение тестовыми данными
 
 ```shell
-bash ./scripts/mongo-init.sh
+bash ./scripts/mongo-seed.sh
 ```
 
 ## Как проверить
