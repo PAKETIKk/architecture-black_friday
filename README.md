@@ -2,16 +2,28 @@
 
 ## Как запустить
 
+Переходим в директорию с выполнением задания 4
+
+```shell
+cd ./mongo-sharding-repl
+```
+
 Запускаем mongodb и приложение
 
 ```shell
 docker compose up -d
 ```
 
-Заполняем mongodb данными
+Инициализация шардов
 
 ```shell
-./scripts/mongo-init.sh
+bash ./scripts/mongo-init.sh
+```
+
+Инициализация роутера, заполнение тестовыми данными
+
+```shell
+bash ./scripts/mongo-seed.sh
 ```
 
 ## Как проверить
@@ -33,3 +45,7 @@ curl --silent http://ifconfig.me
 ## Доступные эндпоинты
 
 Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+
+# Диаграммы
+
+Все версии диаграмм находятся в директории diagrams
